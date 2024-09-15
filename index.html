@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="gallery-container">
+    <!-- Main Heading -->
+    <h1 class="gallery-heading">Image-Gallery</h1>
+
+    <!-- Subheading -->
+    <h2 class="gallery-subheading">Here's you will find the images.</h2>
+
+    <div class="gallery-thumbnails">
+      <img src="assets/image1.jpg" alt="Thumbnail 1" class="thumbnail" onclick="showImage(0)">
+      <img src="assets/image2.jpg" alt="Thumbnail 2" class="thumbnail" onclick="showImage(1)">
+      <img src="assets/image3.jpg" alt="Thumbnail 3" class="thumbnail" onclick="showImage(2)">
+      <img src="assets/image4.jpg" alt="Thumbnail 4" class="thumbnail" onclick="showImage(3)">
+      <img src="assets/image5.jpg" alt="Thumbnail 5" class="thumbnail" onclick="showImage(4)">
+    </div>
+
+    <div class="gallery-viewer" id="galleryViewer">
+      <span class="close" onclick="closeViewer()">&times;</span>
+      <span class="prev" onclick="navigate(-1)">&#10094;</span>
+      <img id="mainImage" src="assets/image3.jpg" alt="Main Image">
+      <span class="next" onclick="navigate(1)">&#10095;</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
